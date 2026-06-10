@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Três Números</title>
+</head>
+<body>
+  <h1>Calculadora de Três Números</h1>
+
+  <label for="n1">Número 1:</label>
+  <input type="number" id="n1" placeholder="Digite um número" step="any"><br><br>
+
+  <label for="n2">Número 2:</label>
+  <input type="number" id="n2" placeholder="Digite um número" step="any"><br><br>
+
+  <label for="n3">Número 3:</label>
+  <input type="number" id="n3" placeholder="Digite um número" step="any"><br><br>
+
+  <button onclick="calcular()">Calcular</button>
+
+  <p id="erro" style="display:none;">Preencha os três campos com valores numéricos.</p>
+
+  <div id="resultados" style="display:none;">
+    <h2>Números digitados</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Campo</th>
+          <th>Valor</th>
+          <th>Destaque</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-corpo"></tbody>
+    </table>
+
+    <h2>Resultados</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <tbody>
+        <tr><td>Soma</td><td id="res-soma"></td></tr>
+        <tr><td>Média</td><td id="res-media"></td></tr>
+        <tr><td>Produto</td><td id="res-produto"></td></tr>
+        <tr><td>Maior número</td><td id="res-maior"></td></tr>
+        <tr><td>Menor número</td><td id="res-menor"></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script6.js"></script>
+</body>
+</html>
