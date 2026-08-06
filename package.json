@@ -1,0 +1,21 @@
+{
+  "name": "infosul",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pessoa.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martinez-16/INFOsul.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Martinez-16/INFOsul/issues"
+  },
+  "homepage": "https://github.com/Martinez-16/INFOsul#readme"
+}
