@@ -7,18 +7,18 @@ export default class Elevador {
         this.capacidade = capacidade
         this.numeropessoas = 0
     }
-    subir(){
+    subir(subidas){
         if(this.andaratual < this.totalandares)
         {
-            this.totalandares++
+            this.andaratual = this.andaratual + subidas
             return true
         }
         else return false
     }
-     descer(){
+     descer(descidas){
         if(this.andaratual < this.totalandares)
         {
-            this.totalandares--
+            this.andaratual = this.andaratual - descidas
             return true
         }
         else return false
@@ -32,7 +32,7 @@ export default class Elevador {
             
     }
     sair(numerosaidas){
-        if(this.numeropessoas > this.capacidade){
+        if(this.numeropessoas < this.capacidade){
             this.numeropessoas = this.numeropessoas - numerosaidas
             return true
         }
