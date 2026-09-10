@@ -30,6 +30,6 @@ export default class Funcionario{
         this.#salario = valor
     }
     calculoIR(imposto){
-        return this.#salario*(imposto/100)
+        return this.#salario*imposto/100
     }
 }
